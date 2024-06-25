@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header class="cabeçalho">Cadastro de Contatos</header>
+
+                    <div class="fundocidade">
+                            <section>
+                                <label id="nome">Nome</label>
+                                <input type="text" class="input1" id="inputnome" disabled>
+                            </section>
+                
+                            <section id="sobrenome">
+                                <label >Sobrenome</label>
+                                <input type="text" class="input1" id="inputsobrenome" disabled>
+                            </section>
+                
+                            <section id="endereco">
+                                <label >Endereço</label>
+                                <input type="text" class="input2" id="inputendereco" disabled>
+                            </section>
+                
+                            <section id="telefone">
+                                <label>Telefone</label>
+                                <input type="number" class="input3" id="inputtel" disabled>
+                            </section>
+                        </div>
+            
+                    <div id="botoes">
+                        <button class="botaoverde" onclick="adicionar()">INCLUIR</button>
+                        <button class="botaoamarelo" onclick="editar()" disabled>EDITAR</button>
+                        <button class="botaoazul" id="salvar" onclick="salvar()" disabled>SALVAR</button>
+                        <button class="botaobranco" disabled onclick="cancelar()">CANCELAR</button>
+                        <button class="botaovermelho" disabled onclick="excluir()">EXCLUIR</button>
+                    </div>
+                        <div id="setas">
+                            <button onclick="primeiro()">|&lt;</button>
+                            <button onclick="anterior()">&lt;</button>
+                            <button onclick="proximo()">&gt;</button>
+                            <button onclick="ultimo()">&gt;|</button>
+                        </div>
+
+    
+    <footer class="rodape">AGENDA DE CONTATOS</footer>
+
+</body>
+</html>

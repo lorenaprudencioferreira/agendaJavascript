@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Satisfy&display=swap');
+
+
+
+/**CSS DE HOME E CADASTRO (INTERFACE)**/
+body{
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "cabeçalho cabeçalho"
+    "form botoes"
+    "setas setas"
+    "rodape rodape";
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: auto 1fr 1.3fr auto;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.navfundoazul{
+    background-color: #04C9F4;
+}
+
+.selecionado{
+    color: black;
+    font-weight: 500;
+}
+
+.cabeçalho{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    background: #04C9F4;
+    color: white;
+    height: 40px;
+    grid-area: cabeçalho;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.rodape{
+font-size: 14px;
+font-weight: 500;
+background-color: white;
+height: 40px;
+color: #04c9f4;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-area: rodape;
+}
+
+
+/**CSS DO CADASTRO GERAL**/
+#formulario{
+    width: fit-content;
+    height: fit-content;
+    background: #FEFBFB;
+    grid-area: form;
+    padding: 20px;
+}
+
+label{
+    color: white;
+    font-size: 13px;
+    display: block
+}
+
+input{
+    height: 37px;
+    border: 0.5px rgb(206, 206, 206) solid;
+}
+
+section{
+    padding: 8px;
+}
+
+.fundocidade{
+    display: grid;
+    grid-template-areas: 
+    "nome sobrenome"
+    "endereco endereco"
+    "tel tel";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+
+#nome{
+    grid-area: nome;
+}
+
+#sobrenome{
+    grid-area: sobrenome;
+}
+
+#endereco{
+    grid-area: endereco;
+}
+
+#telefone{
+    grid-area: tel;
+}
+
+.input1{
+    width: 210px;
+}
+
+.input2{
+    width: 442px;
+}
+
+.input3{
+    width: 210px;
+}
+
+#geral{
+    display: flex;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    grid-area: botoes;
+}
+
+#setas{
+    grid-area: setas;
+}
+
+button{
+    background-color: rgb(144, 144, 144);
+    color: white;
+}
+
+.botaoverde{
+    background-color: #117705;
+    color: #ffff;
+}
+
+.botaoverde:hover{
+    background-color: #0f5e06;
+}
+
+.botaoamarelo{
+    background-color: #ffc61c;
+    color: #ffff;
+}
+
+.botaoamarelo:hover{
+    background-color: #eab20a;
+}
+
+.botaoazul{
+    background-color: #04C9F4;
+    color: #ffff;
+}
+
+.botaoazul:hover{
+    background-color: #03a8cd;
+}
+
+.botaovermelho{
+    background-color: #F40404;
+    color: #ffff;
+}
+
+.botaovermelho:hover{
+    background-color: #cf0202;
+}
+
+.botaobranco{
+    background-color: white;
+    color: #04C9F4;
+}
+
+.botaobranco:hover{
+    background-color: rgb(242, 242, 242)
+}
+
+button:disabled {
+    color: #858585;
+    background-color: rgb(185, 185, 185)
+
+}
+
+button:disabled:hover {
+    background-color: rgb(185, 185, 185)
+}
+
+/**CSS DO CADASTRO CIDADE**/
+.fundocidade{
+    background-color: #D9D9D9;
+    width: 63vh;
+    height: 31vh;
+    padding: 11px;
+}
+
+button{
+    border-style: none;
+    width: 100px;
+    height: 33px;
+    margin: 10px 6.5px 10px;
+}
+
+/**PARA DISPOSITIVOS MÓVEIS**/
+
+@media screen and (max-width: 780px){
+    
+    .fundocidade{
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        grid-template-areas: 
+        "nome"
+        "sobrenome"
+        "endereco"
+        "tel";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #botoes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body{
+        grid-template-areas:
+        "cabeçalho"
+        "form"
+        "botoes"
+        "setas"
+        "rodape";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    }
+}
+
